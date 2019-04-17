@@ -3,6 +3,7 @@ TARGET := aws-face-rekognition
 SOURCES := main.cpp
 
 OBJS := $(SOURCES:.cpp=.o)
+CXXFLAGS := -std=c++11
 LFLAGS := -Wl,-R/usr/local/lib -laws-cpp-sdk-core -laws-cpp-sdk-rekognition
 
 $(TARGET): $(OBJS)
